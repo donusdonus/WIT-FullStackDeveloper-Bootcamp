@@ -1,0 +1,53 @@
+/**/
+body {
+    background-color: black;
+}
+
+div {
+    position: relative;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    transform: scale(1,1);
+}
+
+
+@keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+div>div:nth-child(1) {
+    position: absolute;
+    border-radius: 0%;
+    border-top-left-radius: 100%;
+    width: 50%;
+    height: 50%;
+    top: 0%;
+    left: 0%;
+    transform-origin: bottom right;
+    background-color:blue;     
+    animation: roll 3s linear infinite normal;
+    
+}
+
+div>div:nth-child(2) {
+    position: absolute;
+    border-radius: 100%;
+    top: 5%;
+    left:5%;
+    width: 90%;
+    height: 90%;
+    background-color:whitesmoke;    
+}
+
+div>div:nth-child(2):hover{
+    background-color: burlywood;
+}
