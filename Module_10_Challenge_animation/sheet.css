@@ -25,6 +25,7 @@ div {
 
 
 div>div:nth-child(1) {
+    display: inline-block;
     position: absolute;
     border-radius: 0%;
     border-top-left-radius: 100%;
@@ -39,15 +40,12 @@ div>div:nth-child(1) {
 }
 
 div>div:nth-child(2) {
-    position: absolute;
+    display: inline-block;
     border-radius: 100%;
-    top: 5%;
-    left:5%;
-    width: 90%;
-    height: 90%;
+    top: 10%;
+    left:10%;
+    width: 80%;
+    height: 80%;
     background-color:whitesmoke;    
 }
 
-div>div:nth-child(2):hover{
-    background-color: burlywood;
-}
