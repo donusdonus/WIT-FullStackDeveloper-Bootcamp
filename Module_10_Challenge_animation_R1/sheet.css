@@ -1,0 +1,53 @@
+/**/
+
+body{
+    background: black;
+}
+
+div {
+    display: flex;
+    position: absolute;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    background-color:#EDFEED;
+}
+
+
+@keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+div::before{
+    content: '';
+    position: absolute;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border-top-left-radius: 100%;
+    transform-origin: 100px 100px;
+    animation: roll 3s linear infinite normal;
+}
+
+div::after{
+    position: absolute;
+    content: '';
+    background-color: #FFFFFF;
+    width: 170px;
+    height: 170px;
+    top: 15px;
+    left: 15px;
+    border-radius: 50%;
+
+}
+
+
+
+
+
