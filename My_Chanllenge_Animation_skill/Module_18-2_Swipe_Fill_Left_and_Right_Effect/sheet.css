@@ -27,7 +27,7 @@ body>button:nth-of-type(1)::after
      top: 0%;
      left: 0%;
      height: 100%;
-     animation: width ease-out 1s;
+     animation: 3s linear 1s infinite slide-in
      width: 0%;
 }
 
