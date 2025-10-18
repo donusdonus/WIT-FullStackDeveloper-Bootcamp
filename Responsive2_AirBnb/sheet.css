@@ -1,0 +1,113 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+div{
+    width: 100%;
+    content: "A";
+    background:red;
+    height: 25px;
+}
+
+body>div:nth-child(1) {
+    position: relative;
+    background-color: black;
+    height: 50px;
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body>div:nth-child(1)>a {
+    color: white;
+}
+
+
+
+
+body>div:nth-child(2) {
+
+  height: 800px;  
+  background-image: url("resource/Background Image.webp");
+  background-size: cover;
+  background-position: center;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+body>div:nth-child(2)>div {
+    position: relative;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+body>div:nth-child(2)>div>div:nth-child(1) {
+    background-color: blue;
+}
+
+body>div:nth-child(2)>div>div:nth-child(2) {
+    background-color: red;
+}
+
+body>div:nth-child(2)>div>div:nth-child(3) {
+    background-color: transparent;
+    height: 420px;
+}
+
+body>div:nth-child(2)>div>div:nth-child(4) {
+    background-color: transparent;
+    height: 150px;
+    color: #FFFFFF;
+    font-size: 58px;
+    font-weight: bold;
+}
+
+body>div:nth-child(2)>div>div:nth-child(5) {
+    position: relative;
+    background-color: transparent;
+}
+
+body>div:nth-child(2)>div>div:nth-child(5)>input[type="button"] {
+    background-color: white;
+    width: 155px;
+    height: 32px;
+    margin-top: 0px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+body>div:nth-child(3) {
+  
+  height: 500px;
+  background-color: white;
+}
+
+body>div:nth-child(4) {
+  
+  height: 400px;
+  background-color: black;
+  
+}
+
+body>div:nth-child(5) {
+  
+  height: 400px;
+  background-color: white;
+}
+
+body>div:nth-child(6) {
+  
+  height: 450px;
+  background-color: #F7F7F7;
+}
