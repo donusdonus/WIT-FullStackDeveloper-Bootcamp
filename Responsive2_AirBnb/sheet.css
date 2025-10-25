@@ -132,7 +132,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 22px;
-    height: 100px;;
+    height: 100px;
 }
 
 
@@ -141,6 +141,40 @@ body {
 .topic_menu2 {
     display: block;
     color: black;
+    background-color: white;
 }
 
+.menu2_content>div {
+    background-color: white;
+    width: 180px;
+}
+
+.menu2_content>div>a {
+    padding-top: 10px;
+    background-color: transparent;
+}
+
+.menu2_content>div>a , .menu2_content>div>input  {
+    margin-left: 20px;
+}
+
+.menu2_content>div>input {
+    width: 130px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+}
+
+#menu2>div:nth-of-type(1) , #menu2>div:nth-of-type(1)>div
+{
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#menu2>div:nth-of-type(5) , #menu2>div:nth-of-type(5)>div
+{
+    background-color: white;
+    width: 80px;
+    height: 73px;
+}
 
