@@ -52,6 +52,15 @@ body>div:nth-child(2)>div {
 
 body>div:nth-child(2)>div>div:nth-child(1) {
     background-color: blue;
+    display: flex;
+    flex-direction: row;
+    height: 66px;
+    width: 90%;
+}
+
+body>div:nth-child(2)>div>div:nth-child(1)>* {
+    background: blanchedalmond;
+    height: 66px;
 }
 
 body>div:nth-child(2)>div>div:nth-child(2) {
