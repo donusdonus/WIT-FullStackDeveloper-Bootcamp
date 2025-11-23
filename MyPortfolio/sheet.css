@@ -1,68 +1,259 @@
+:root {
+    --color-bg :#36122B; /* #373737 */;
+    --color-font-white:#ccc9c9; /* #BEBEBD; */
+    --color-font-gray:#069496;
+    --padding-left-side:10px;
+    --gallery_group_name: "Emedded Developer";
+    --gallery_img1: url("./asset/Embedded/EM1.jpg");
+    --gallery_img2: url("./asset/Embedded/EM2.jpg");
+    --gallery_img3: url("./asset/Embedded/EM3.jpg");
+    --gallery_img4: url("./asset/Embedded/EM4.jpg");
+    --gallery_img5: url("./asset/Embedded/EM5.jpg");
+    --time_change_role: 30s;
+    --H1-FontSize-Header:30px;
+    --H1-FontWidth-Header:400;
+    --H2-FontSize:22px;
+    --H2-FontWidth:400;
+    --H3-FontSize:20px;
+    --H3-FontWidth:400;
+    --H4-FontSize:18px;
+    --H4-FontWidth:400;
+}
+
+article {
+    border-left: 2px solid white;
+    padding-left: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
-    font-family: "ubuntu";
+    background: var(--color-bg);
+    color: var(--color-font-white);
+    font-family:"Ubuntu";
 }
 
-#Header {
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+
+.image {
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px 1px gray;
+    padding-left: var(--padding-left-side);
+}
+
+body {
     display: flex;
-    border: 1px solid blue;
-    column-gap: 30px;
+    flex-direction: row;
+    justify-content: left;
+    column-gap: 50px;
 }
 
-#name{
-    font-size: 30px;
+
+
+.inner_aside {
+    position: sticky;
+    top: 20px;
+}
+
+#list {
+    font-size: 25px;
+    /*list-style-type: none;*/
+    list-style-type:none;
+    line-height: 50px;
+    padding-left: var(--padding-left-side);
+    width: 240px;
+}
+
+.nav_menu {
+
+    /*border: 1px solid black;*/
+}
+
+.nav_selection {
+    text-decoration: none;
+    box-sizing: content-box;
+    /*padding: 5px;
+        background-color: gray;
+    border-radius: 5px;*/
+}
+
+.nav_selection:hover {
+    font-size: 27px;
+    color: var(--color-bg);
+    background-color: var(--color-font-white);
+    border-radius: 5px;
     font-weight: bold;
 }
 
-#role{
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-#aboutme {
-    align-self: self-end;
-    font-size: 20px;
-    font-weight: lighter;
-    margin-top: 1px;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding:10px 10px;
-    max-width: 700px;
-}
-
-.image {
-    position: relative;
-    image-rendering: optimizeQuality ;
+#nav_hr1,#nav_hr2{
+    height: 2px;
     background-color: aqua;
     width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
 }
 
-
-#nav {
+.group_image {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    column-gap: 10px;
 }
 
-#nav>div {
-    border: 1px solid black;
-    font-size: 25px;
-    height: 50px;
-    align-content: center;
-    text-align: center;
+.group_image>div {
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
 }
 
-#nav>div:nth-of-type(1) {
-    border-top-right-radius: 10px;
+.group_image>div:nth-of-type(1) {
+    background-image: var(--gallery_img1)
+    /*animation:ImageRole1 var(--time_change_role) steps(4) infinite;*/
 }
 
-#nav>div:last-of-type {
-    border-bottom-right-radius: 10px;
+.group_image>div:nth-of-type(2) {
+    background-image: var(--gallery_img2)
 }
 
-#nav>div:hover {
+.group_image>div:nth-of-type(3) {
+    background-image: var(--gallery_img3)
+}
+
+.group_image>div:nth-of-type(4) {
+    background-image: var(--gallery_img4);
+}
+
+.group_image>div:nth-of-type(5) {
+    background-image: var(--gallery_img5);
+}
+
+.group_image>div:hover {
+    scale: 200%;
+}
+
+@keyframes ChangeRoleName 
+{
+        0% {
+        content:"PLC Programmer";
+    }
+
+        25% {
+        content:"Software Developer";
+    }
+
+        50% {
+        content:"Embedded Developer";
+    }
+
+        75% {
+        content:"Building Software Engineer";
+    }
+}
+
+@keyframes ImageRole1
+{
+    0% {
+        /*content:"PLC Programmer";*/
+        background-image: url("./asset/Automation/PLC1.jpg");
+    }
+
+        25% {
+        /*content:"Software Developer";*/
+        background-image: url("./asset/BackEndDev/SW1.jpg");
+    }
+
+        50% {
+        /*content:"Embedded Developer";*/
+        background-image: url("./asset/Embedded/EM1.jpg");
+    }
+
+        75% {
+        /*content:"Building Software Engineer";*/
+        background-image: url("./asset/Building/BMS1.jpg");
+    }
+}
+
+
+
+.group_role{
+    font-size: var(--H1-FontSize-Header);
+    font-weight: var(--H1-FontWidth-Header);
+    /*animation: ChangeRoleName var(--time_change_role) ease infinite normal;*/
+}
+
+.Content_Header {
+    font-size: var(--H1-FontSize-Header);
+    font-weight: var(--H1-FontWidth-Header);
+}
+
+.Content_Header1 {
+    font-size: var(--H2-FontSize);
+    font-weight: var(--H2-FontWidth);
+    color: #13ee0b;
+}
+
+.Content_Header2 {
+    font-size: var(--H3-FontSize);
+    font-weight: var(--H3-FontWidth);
+    color: #5085F5;
+}
+
+.Content_Header3 {
+    font-size: var(--H4-FontSize);
+    font-weight: var(--H4-FontWidth);
+}
+
+.Content_Header4 {
+    font-size: var(--H4-FontSize);
+    font-weight: var(--H4-FontWidth);
+}
+
+
+.badget {
+    color: var(--color-bg);
+    background-color: var(--color-font-white);
+    /*box-shadow: 2px 2px 1px 1px blue;*/
+    font-size: 20px;
+    font-weight: 600;
+    width: 0px;
+    margin-left: 10px;
     padding-left: 10px;
-    border-left: 10px solid blue;
-    background-color:aquamarine;
-    
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+
+section li {
+    line-height: 30px;
+}
+
+section ul>li{
+   list-style-type:circle;
+}
+
+.headerbar {
+    display: block;
+    background-color: #4F4046;
+    width: calc(100% - 5px);
+    padding-left: 10px;
+}
+
+.iconbase {
+    display: inline-block;
+    background-image: url("https://api.iconify.design/material-symbols:engineering.svg");
+    background-repeat:no-repeat;
+    background-position: 50%;
+    background-size: 100%;;
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    align-items: center;
+    align-self: center;
 }
