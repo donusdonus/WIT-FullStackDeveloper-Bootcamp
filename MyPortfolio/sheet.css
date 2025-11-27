@@ -137,7 +137,7 @@ body {
 }
 
 .group_image>div:hover {
-    scale: 200%;
+    scale: 150%;
 }
 
 @keyframes ChangeRoleName 
@@ -296,8 +296,14 @@ section ul>li{
     cursor : grab;
 }
 
-.init_close {
+._close {
     display: none;
+    transition: height 10s ease-in-out;
+}
+
+._open {
+    display: contents;
+    transition: height 10s ease-in-out;
 }
 
 .polaroid {
@@ -314,7 +320,7 @@ section ul>li{
 }
 
 .polaroid>div:hover {
-    scale: 150%;
+    scale: 120%;
 }
 
 .polaroid_header {
@@ -342,9 +348,19 @@ section ul>li{
 }
 
 
-@media screen and (width <= 610px)
+@media screen and (width <= 750px)
 {
     body>aside {
         display: none;
     }   
+
+    article {
+    border-left: 0px solid white;
+    padding-left: 10px;
+}
+
+.group_image>div {
+    display: none;
+}
+
 }

@@ -68,7 +68,7 @@
                     </ul>
                 </li>
                 <br>
-                <div class="init_close">
+                <div id="education" class="_close">
                 <li>
                     <span class="Content_Header1">Chachoengsao Technical College</span>
                     <ul class="Content_Header3">
@@ -87,7 +87,7 @@
                 </li>
                 <br>
                 </div>
-                <div class="btn_more_details">Show More Details</div>
+                <div id="btn_education" class="btn_more_details" onclick="button_toggle('btn_education','education');">Show More Details</div>
                 <br>
             </ul>
         </section>
@@ -165,7 +165,7 @@
                     </ul>
                 </li>
                 <br>
-                <div class="init_close">
+                <div class="_close" id="job">
                 <li>
                     <span class="Content_Header1">THAI SAMSUNG ELECTRONICS Co.,ltd.</span><span class="badget">Since
                         2017 - 2018</span>
@@ -200,7 +200,7 @@
                 </li>
                 <br>
             </div>
-                <div class="btn_more_details">Show More Details</div>
+                <div id="btn_job" class="btn_more_details" onclick="button_toggle('btn_job','job');">Show More Details</div>
 <br>
         </section>
 
@@ -208,14 +208,65 @@
             <span class="Content_Header headerbar">Technical projects</span>
                 <br>
                 <div class="polaroid">
-                        <div><img src="./asset/Technical/T2.jpg" width=300px><div><span class="polaroid_header">Content</span><br><span class="Content_Header3">erer</span></div></div>
-                        <div><img src="./asset/Technical/T3.jpg" width=300px><div><span class="polaroid_header">Content</span><br><span class="Content_Header3">erer</span></div></div>
-                        <div><img src="./asset/Technical/T4.jpg" width=300px><div><span class="polaroid_header">Content</span><br><span class="Content_Header3">erer</span></div></div>
-                        <div><img src="./asset/Technical/T5.jpg" width=300px><div><span class="polaroid_header">Content</span><br><span class="Content_Header3">erer</span></div></div>
-                        <div><img src="./asset/Technical/T6.jpg" width=300px><div><span class="polaroid_header">Content</span><br><span class="Content_Header3">erer</span></div></div>
-                        <div><img src="./asset/Technical/T7.jpg" width=300px><div><span class="polaroid_header">Content</span><br><span class="Content_Header3">erer</span></div></div>
-                        <div><img src="./asset/Technical/T8.jpg" width=300px><div><span class="polaroid_header">Content</span><br><span class="Content_Header3">erer</span></div></div>
-                        <div><img src="./asset/Technical/T9.jpg" width=300px><div><span class="polaroid_header">Content</span><br><span class="Content_Header3">erer</span></div></div> 
+                        <div>
+                            <img src="./asset/Technical/T2.jpg" width=300px>
+                                <div class="Content_Header3">
+                                    <span class="polaroid_header">Time Series Analysis.</span><br>
+                                    Troubleshooting problem machine <br>by tracking signal machine status.<br><br>
+                                </div>
+                        </div>
+
+                        <div>
+                            <img src="./asset/Technical/T3.jpg" width=300px>
+                                <div class="Content_Header3">
+                                    <span class="polaroid_header">Application MCU for Industry.</span><br>
+                                    Applie MCU for input data from <br>barcode select material feeder.<br><br>
+                                </div>
+                        </div>
+
+                        <div>
+                            <img src="./asset/Technical/T4.jpg" width=300px>
+                                <div>
+                                    <span class="polaroid_header">Integrated IoT Device.</span><br>
+                                    <span class="Content_Header3">Integrated IoT Device by python<br> coding intro software manage<br>building Niagara.<br><br></span>
+                                </div>
+                        </div>
+
+                        <div><img src="./asset/Technical/T5.jpg" width=300px>
+                            <div>
+                                <span class="polaroid_header">Hardware Communication Analysis.</span><br>
+                                <span class="Content_Header3">Find cause of hardware control<br> number as communication loss data.<br>by use rs485 tools.<br><br></span>
+                            </div>
+                        </div>
+
+                        <div><img src="./asset/Technical/T6.jpg" width=300px>
+                            <div>
+                                <span class="polaroid_header">Hardware and software.</span><br>
+                                <span class="Content_Header3">Make circuit board for instruments<br> and Windows Applicaion for Inspect<br> electricl automotive parts.</span><br><br>
+                            </div>
+                        </div>
+
+                        <div><img src="./asset/Technical/T7.jpg" width=300px>
+                            <div class="Content_Header3">
+                                <span class="polaroid_header">Web Server station monitoring.</span><br>
+                                Applied RasberryPi Communication<br> with plc and process webserver for<br>monitoring sensor and status of<br> system.<br><br>
+                            </div>
+                        </div>
+                        <div><img src="./asset/Technical/T8.jpg" width=300px>
+                            <div class="Content_Header3">
+                                <span class="polaroid_header">Monitor Status and Control Recipe.</span><br>
+                                Make windows application for<br> monitor machine status and <br>equipment online in system.
+                                <br>Can Transfer recipe intro machine.
+                            </div>
+                        </div>
+
+                        <div><img src="./asset/Technical/T9.jpg" width=300px>
+                            <div class="Content_Header3">
+                                <span class="polaroid_header">API Gateway Communcation.</span><br>
+                                Make smart api support access layer<br> hardware , file , database for<br> WebDeveloper.
+                                Coding by python.
+                            </div>
+                        </div> 
                 </div>
                 <br>
         </section>
@@ -324,6 +375,24 @@
             }
             cnt = (cnt + 1) % 4;
         }, 1000);
+    
+        function button_toggle(id_btn,id_content)
+        {
+            let btn = document.getElementById(id_btn);
+            let context = document.getElementById(id_content);
+            
+            if(btn.innerText == "Show More Details")
+            {
+                context.classList.replace("_close","_open");
+                btn.innerText = "Hide Some Details";
+            }
+            else 
+            {
+                context.classList.replace("_open","_close");
+                btn.innerText = "Show More Details";
+            }
+        }
+        
     </script>
 
 </body>
