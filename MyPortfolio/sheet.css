@@ -193,6 +193,7 @@ body {
 .Content_Header {
     font-size: var(--H1-FontSize-Header);
     font-weight: var(--H1-FontWidth-Header);
+    display: inline-block;
 }
 
 .Content_Header1 {
@@ -356,11 +357,54 @@ section ul>li{
 
     article {
     border-left: 0px solid white;
-    padding-left: 10px;
+    padding-left: 1px;
 }
+
+@media screen and (width <= 650px)
+{
+    body>aside {
+        display:none; 
+    }   
+
+    .polaroid {
+           row-gap:40px;
+    }
+
+    .polaroid>div>img {
+        width: 450px;
+    }
+
+    .polaroid>div:hover {
+        scale: 100%;
+    }
+
+
+
+}
+
 
 .group_image>div {
     display: none;
+    border-radius: 50px;
 }
 
+}
+
+.spin {
+    transform-origin: center;
+    animation-name: spin_animation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes spin_animation
+{
+     from {
+    rotate: 0deg;
+  }
+
+  to {
+        rotate: 360deg;
+  }
 }
