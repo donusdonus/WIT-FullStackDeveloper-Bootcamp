@@ -1,0 +1,43 @@
+* {
+    font-weight: lighter;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+h2 {
+    color: blueviolet;
+}
+
+
+body
+{
+    background-color: whitesmoke;
+}
+
+table>thead>tr>td {
+    text-align: center;
+    font-weight: bold;
+    background-color:plum;
+}
+
+tbody>tr>td:first-child{
+    background-color : bisque;
+}
+
+
+table {
+    position: relative;
+    left: 20%;
+    width: 60%;
+    border: 1px;
+    border-color: purple;
+    border-style: solid;
+}
+
+tr td {
+    border-style: inset;
+    border-color: purple;
+    border-width: 1px;
+}
