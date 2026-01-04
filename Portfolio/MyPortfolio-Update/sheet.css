@@ -1,0 +1,527 @@
+:root {
+    --color-bg : azaure; /* #373737 */;
+    --color-font-white:black; /* #BEBEBD; */
+    --color-font-gray:#069496;
+    --padding-left-side:10px;
+    --gallery_group_name: "Emedded Developer";
+    --gallery_img1: url("./asset/Embedded/EM1.jpg");
+    --gallery_img2: url("./asset/Embedded/EM2.jpg");
+    --gallery_img3: url("./asset/Embedded/EM3.jpg");
+    --gallery_img4: url("./asset/Embedded/EM4.jpg");
+    --gallery_img5: url("./asset/Embedded/EM5.jpg");
+    --time_change_role: 30s;
+    --H1-FontSize-Header:30px;
+    --H1-FontWidth-Header:400;
+    --H2-FontSize:22px;
+    --H2-FontWidth:400;
+    --H3-FontSize:20px;
+    --H3-FontWidth:400;
+    --H4-FontSize:18px;
+    --H4-FontWidth:400;
+}
+
+article {
+    border-left: 2px solid white;
+    padding-left: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    background: var(--color-bg);
+    color: var(--color-font-white);
+    font-family: "Arial", "Ubuntu";
+    text-wrap-mode: wrap;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+
+.image {
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px 1px gray;
+    padding-left: var(--padding-left-side);
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    column-gap: 50px;
+}
+
+
+
+.inner_aside {
+    position: sticky;
+    top: 20px;
+}
+
+#list {
+    font-size: 25px;
+    /*list-style-type: none;*/
+    list-style-type:none;
+    line-height: 50px;
+    padding-left: var(--padding-left-side);
+    width: 240px;
+}
+
+.nav_menu {
+
+    /*border: 1px solid black;*/
+}
+
+.nav_selection {
+    text-decoration: none;
+    box-sizing: content-box;
+    /*padding: 5px;
+        background-color: gray;
+    border-radius: 5px;*/
+}
+
+.nav_selection:hover {
+    font-size: 27px;
+    color: whitesmoke;
+    background-color: #447FFD;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#nav_hr1,#nav_hr2{
+    height: 2px;
+    background-color: #447FFD;
+    width: 100%;
+}
+
+.group_image {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    row-gap: 15px;
+    flex-wrap: wrap;
+}
+
+.group_image>div {
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+
+}
+
+#PLC_Engineer>div:nth-of-type(1) {
+    background-image: url('./asset/Automation/PLC1.jpg');
+}
+
+#PLC_Engineer>div:nth-of-type(2) {
+    background-image: url('./asset/Automation/PLC2.jpg');
+}
+
+#PLC_Engineer>div:nth-of-type(3) {
+    background-image: url('./asset/Automation/PLC3.jpg');
+}
+
+#PLC_Engineer>div:nth-of-type(4) {
+    background-image: url('./asset/Automation/PLC4.jpg');
+}
+
+#PLC_Engineer>div:nth-of-type(5) {
+    background-image: url('./asset/Automation/PLC5.jpg');
+}
+
+#Software_Engineer>div:nth-of-type(1) {
+    background-image: url('./asset/BackEndDev/SW1.jpg');
+}
+
+#Software_Engineer>div:nth-of-type(2) {
+    background-image: url('./asset/BackEndDev/SW2.jpg');
+}
+
+#Software_Engineer>div:nth-of-type(3) {
+    background-image: url('./asset/BackEndDev/SW3.jpg');
+}
+
+#Software_Engineer>div:nth-of-type(4) {
+    background-image: url('./asset/BackEndDev/SW4.jpg');
+}
+
+#Software_Engineer>div:nth-of-type(5) {
+    background-image: url('./asset/BackEndDev/SW5.jpg');
+}
+
+#BMS_Engineer>div:nth-of-type(1) {
+    background-image: url('./asset/Building/BMS1.jpg');
+}
+
+#BMS_Engineer>div:nth-of-type(2) {
+    background-image: url('./asset/Building/BMS2.jpg');
+}
+
+#BMS_Engineer>div:nth-of-type(3) {
+    background-image: url('./asset/Building/BMS3.jpg');
+}
+
+#BMS_Engineer>div:nth-of-type(4) {
+    background-image: url('./asset/Building/BMS4.jpg');
+}
+
+#BMS_Engineer>div:nth-of-type(5) {
+    background-image: url('./asset/Building/BMS5.jpg');
+}
+
+#Embedded_Developer>div:nth-of-type(1) {
+    background-image: url('./asset/Embedded/EM1.jpg');
+}
+
+#Embedded_Developer>div:nth-of-type(2) {
+    background-image: url('./asset/Embedded/EM2.jpg');
+}
+
+#Embedded_Developer>div:nth-of-type(3) {
+    background-image: url('./asset/Embedded/EM3.jpg');
+}
+
+#Embedded_Developer>div:nth-of-type(4) {
+    background-image: url('./asset/Embedded/EM4.jpg');
+}
+
+#Embedded_Developer>div:nth-of-type(5) {
+    background-image: url('./asset/Embedded/EM5.jpg');
+}
+
+.group_image>div:hover {
+    scale: 150%;
+}
+
+@keyframes ChangeRoleName 
+{
+        0% {
+        content:"PLC Programmer";
+    }
+
+        25% {
+        content:"Software Developer";
+    }
+
+        50% {
+        content:"Embedded Developer";
+    }
+
+        75% {
+        content:"Building Software Engineer";
+    }
+}
+
+@keyframes ImageRole1
+{
+    0% {
+        /*content:"PLC Programmer";*/
+        background-image: url("./asset/Automation/PLC1.jpg");
+    }
+
+        25% {
+        /*content:"Software Developer";*/
+        background-image: url("./asset/BackEndDev/SW1.jpg");
+    }
+
+        50% {
+        /*content:"Embedded Developer";*/
+        background-image: url("./asset/Embedded/EM1.jpg");
+    }
+
+        75% {
+        /*content:"Building Software Engineer";*/
+        background-image: url("./asset/Building/BMS1.jpg");
+    }
+}
+
+
+
+.group_role{
+    font-size: var(--H1-FontSize-Header);
+    font-weight: var(--H1-FontWidth-Header);
+    /*animation: ChangeRoleName var(--time_change_role) ease infinite normal;*/
+}
+
+.Content_Header {
+    font-size: var(--H1-FontSize-Header);
+    font-weight: var(--H1-FontWidth-Header);
+    display: inline-block;
+}
+
+.Content_Header1 {
+    font-size: var(--H2-FontSize);
+    font-weight: var(--H2-FontWidth);
+    color:blue;
+}
+
+.Content_Header2 {
+    font-size: var(--H3-FontSize);
+    font-weight: var(--H3-FontWidth);
+    color:orangered;
+}
+
+.Content_Header3 {
+    font-size: var(--H4-FontSize);
+    font-weight: var(--H4-FontWidth);
+    padding-left: 5px;
+}
+
+.Content_Header4 {
+    font-size: var(--H4-FontSize);
+    font-weight: var(--H4-FontWidth);
+}
+
+
+.badget {
+    color: azure;
+    background-color: green;
+    /*box-shadow: 2px 2px 1px 1px blue;*/
+    font-size: 20px;
+    font-weight: 600;
+    width: 0px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.badget_github {
+    display: inline;
+    color: azure;
+    background-color:rgb(117, 116, 116);
+    /*box-shadow: 2px 2px 1px 1px blue;*/
+    font-size: 20px;
+    font-weight: 600;
+    width: 0px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.badget_github:hover {
+    scale: 150%;
+}
+
+section li {
+    line-height: 30px;
+}
+
+section ul>li{
+   list-style-type:circle;
+}
+
+.headerbar {
+    display: block;
+    background-color: #447FFD;
+    width: calc(100% - 5px);
+    padding-left: 10px;
+    color: beige;
+}
+
+.iconbase {
+    display: inline-block;
+    background-image: url("https://api.iconify.design/material-symbols:engineering.svg");
+    background-repeat:no-repeat;
+    background-position: 50%;
+    background-size: 100%;;
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    align-items: center;
+    align-self: center;
+}
+
+
+.btn_more_details{
+    background-color: rgb(116, 116, 230);
+    color: azure;    
+    width: 170px;
+    height: 40px;
+    text-align:center;
+    line-height: 36px;
+    border-radius: 10px;
+    font-size: 16px;
+ 
+}
+
+.btn_more_details:hover{
+    scale: 110%;
+    cursor : grab;
+}
+
+._close {
+    display: none;
+    /*transition: height 10s ease-in-out;*/
+}
+
+._open {
+    display: contents;
+    /*transition: height 10s ease-in-out;*/
+}
+
+.polaroid {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.polaroid_size {
+    width: 300px;
+    height: 300px;
+}
+
+.polaroid>div {
+    background-color: white;
+    
+}
+
+
+.polaroid_image {
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+}
+
+.polaroid_image1 {
+    background-image: url("./asset/Technical/T2.jpg");
+}
+
+.polaroid_image2 {
+    background-image: url("./asset/Technical/T3.jpg");
+}
+
+.polaroid_image3 {
+    background-image: url("./asset/Technical/T4.jpg");
+}
+
+.polaroid_image4 {
+    background-image: url("./asset/Technical/T5.jpg");
+}
+
+.polaroid_image5 {
+    background-image: url("./asset/Technical/T6.jpg");
+}
+
+.polaroid_image6 {
+    background-image: url("./asset/Technical/T7.jpg");
+}
+
+.polaroid_image7 {
+    background-image: url("./asset/Technical/T8.jpg");
+}
+
+.polaroid_image8 {
+    background-image: url("./asset/Technical/T9.jpg");
+}
+
+
+.polaroid>div {
+    box-shadow: -1px -1px 3px 3px rgb(112, 107, 107);
+}
+
+.polaroid>div:hover {
+    scale: 120%;
+}
+
+.polaroid_header {
+    color: blue;
+    font-size: 20px;
+}
+
+.Contact_Header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.Contact_Header>div>img {
+    border-radius: 10px;
+
+}
+.
+
+.Contact_Header>div {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+@media screen and (width <= 750px)
+{
+    body>aside {
+        display: none;
+    }   
+
+    article {
+    border-left: 0px solid white;
+    padding-left: 1px;
+}
+
+@media screen and (width <= 600px)
+{
+    body>aside {
+        display:none; 
+    }   
+
+    .polaroid {
+        row-gap:40px;
+    }
+
+    .polaroid_size{
+        width: 90%;
+    }
+
+    .polaroid>div:hover {
+        scale: 100%;
+    }
+
+
+
+}
+
+
+.group_image>div {
+    display: none;
+    border-radius: 50px;
+}
+
+}
+
+.spin {
+    transform-origin: center;
+    animation-name: spin_animation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+
+
+@keyframes spin_animation
+{
+     from {
+    rotate: 0deg;
+  }
+
+  to {
+        rotate: 360deg;
+  }
+}
